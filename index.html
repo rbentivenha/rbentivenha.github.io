@@ -75,9 +75,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
     <script>
         new Vue(
-            { el: '#app' },
             {
-                data: () => ({
+                el: '#app',
+                data: {
                     drawer: null,
                     items: [
                         { icon: 'lightbulb_outline', text: 'Notes' },
@@ -95,10 +95,10 @@
                         { icon: 'phonelink', text: 'App downloads' },
                         { icon: 'keyboard', text: 'Keyboard shortcuts' }
                     ]
-                }),
+                },
                 props: {
                     source: String
-                }
+                },
             })
     </script>
 </body>
